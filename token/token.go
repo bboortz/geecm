@@ -12,6 +12,8 @@ type Token struct {
 const (
 	// COMMENT represents a detected comment
 	COMMENT = '#'
+	// SPACE represents a detected space
+	SPACE = ' '
 	// SEMI represents a detected semicolon
 	SEMI = ';'
 	// EOF represents the end of file

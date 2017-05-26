@@ -6,9 +6,16 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestNewToken(t *testing.T) {
+func TestNewCommentToken(t *testing.T) {
 	res1 := Token{Type: COMMENT, Literal: "#"}
 	res2 := Token{Type: COMMENT, Literal: "#"}
+	assert.Equal(t, res1.Type, res1.Type)
+	assert.Equal(t, res1.Literal, res2.Literal)
+}
+
+func TestNewSpaceToken(t *testing.T) {
+	res1 := Token{Type: SPACE, Literal: " "}
+	res2 := Token{Type: SPACE, Literal: " "}
 	assert.Equal(t, res1.Type, res1.Type)
 	assert.Equal(t, res1.Literal, res2.Literal)
 }
