@@ -1,5 +1,9 @@
 package lexer
 
+import (
+	"github.com/bboortz/geecm/token"
+)
+
 // Lexer stores info for lexing input
 type Lexer struct {
 	input        string

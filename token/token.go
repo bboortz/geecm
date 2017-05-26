@@ -1,6 +1,6 @@
 package token
 
-// TokenType an int that represents a char like '<'
+// TokenType an int that represents a char like '#'
 type TokenType int
 
 // Token a token type and literal value
@@ -10,18 +10,10 @@ type Token struct {
 }
 
 const (
+	// COMMENT represents a detected comment
 	COMMENT = '#'
-	SEMI    = ';'
-	EOF     = 0
+	// SEMI represents a detected semicolon
+	SEMI = ';'
+	// EOF represents the end of file
+	EOF = 0
 )
-
-// isComment checks if input string is a comment
-func isComment(str byte) bool {
-
-	switch str {
-	case COMMENT:
-		return true
-	}
-	return false
-
-}
