@@ -19,6 +19,8 @@ const (
 	SPACE = ' '
 	// SEMI represents a detected semicolon
 	SEMI = ';'
+	// EOL represents the end of line
+	EOL = 0
 	// EOF represents the end of file
 	EOF = 0
 )
