@@ -9,6 +9,9 @@ type Token struct {
 	Literal string
 }
 
+// Tokens is a array of multiple detected Token
+type Tokens []Token
+
 const (
 	// COMMENT represents a detected comment
 	COMMENT = '#'
